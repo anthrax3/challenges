@@ -8,7 +8,7 @@ angular.module('challengesApp').config(function($locationProvider, $urlRouterPro
 
 	.state('main', {
 		url: '/challenges/',
-		templateUrl: '/views/main.html',
+		templateUrl: '/challenges/views/main.html',
 		//controller: 'postsCtrl'
 	})
 
