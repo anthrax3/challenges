@@ -19,7 +19,7 @@ angular.module('challengesApp').config(function($locationProvider, $urlRouterPro
 
 	.state('challenges-00', {
 		url: '/00',
-		templateUrl: '/views/challenges/00.html'
+		templateUrl: 'challenges/views/challenges/00.html'
 	})
 
 })
