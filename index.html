@@ -33,7 +33,7 @@
             <li><a ui-sref="challenges-01">01 - Higher/Lower </a></li>
             <li><a ui-sref="challenges-99">99 - Enigma Machine Simulator </a></li>
 
-            <li ng-controller="sidebarCtrl" ng-repeat="challenge in main.challenges">test {{challenge}}</li>
+            <li ng-controller="sidebarCtrl as main" ng-repeat="challenge in main.challenges">test {{challenge}}</li>
 
           </ul>
 
