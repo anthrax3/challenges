@@ -28,6 +28,6 @@ for (c=0;c<=100;++c) {
 		})
 };
 
-//$scope.myarr = [1,2,3,4,5];
+$scope.challenges = ['Name Generator', 'Higher/Lower', 'Enigma Machine Simulator'];
 
 })
