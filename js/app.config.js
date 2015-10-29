@@ -12,9 +12,14 @@ angular.module('challengesApp').config(function($locationProvider, $urlRouterPro
 		//controller: 'postsCtrl'
 	})
 
+	.state('challenges', {
+		url: '/challenges/',
+		templateUrl: '/challenges/views/challenges.html'
+	})
+
 	.state('00', {
 		url: '/00',
-		templateUrl: '/views/00.html'
+		templateUrl: '/views/challenges/00.html'
 	})
 
 })
