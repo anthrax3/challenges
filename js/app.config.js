@@ -35,5 +35,6 @@ for (c=0;c<=100;++c) {
 	main.challenges = [
 		{"00":['Name Generator', check]},
 		{"01":['Higher Lower', '']},
-		{"99":['Enigma Machine Simulator', '']};
+		{"99":['Enigma Machine Simulator', '']}
+		];
 })
