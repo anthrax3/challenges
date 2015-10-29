@@ -55,10 +55,6 @@
   border-bottom: 1px solid #23282e;
   margin-left: 0px;
 }
-.nav-side-menu ul .sub-menu li:hover,
-.nav-side-menu li .sub-menu li:hover {
-  background-color: #d19b3d;
-}
 .nav-side-menu ul .sub-menu li:before,
 .nav-side-menu li .sub-menu li:before {
   font-family: FontAwesome;
