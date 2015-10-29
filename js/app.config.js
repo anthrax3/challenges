@@ -31,7 +31,8 @@ for (c=0;c<=100;++c) {
 })
 
 .controller('sidebarCtrl', function() {
-	var main = this;	
+	var main = this;
+	var check = 'mario';	
 	main.challenges = [
 		{00:['Name Generator', check]},
 		{01:['Higher Lower', '']},
