@@ -34,7 +34,7 @@
             <li><a ui-sref="challenges-99">99 - Enigma Machine Simulator </a></li>
 
             <li ng-repeat="challenge in main.challenges">
-              <a ui-sref="challenges-{challenge.num}">{{challenge.num}} - {{challenge.info[0]}}{{challenge.info[1]}} </a>
+              <a ui-sref="challenges-({challenge.num})">{{challenge.num}} - {{challenge.info[0]}}{{challenge.info[1]}} </a>
             </li>
 
           </ul>
