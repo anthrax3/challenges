@@ -33,7 +33,7 @@
             <li><a ui-sref="challenges-01">01 - Higher/Lower </a></li>
             <li><a ui-sref="challenges-99">99 - Enigma Machine Simulator </a></li>
 
-            <li ng-repeat="(challenge in main.challenges"><a ui-sref="challenges-"> </a></li>
+            <li ng-repeat="challenge in main.challenges"><a ui-sref="challenges-">{{challenge.no}} - {{challenge.info}} </a></li>
 
           </ul>
 
