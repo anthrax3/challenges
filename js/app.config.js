@@ -33,9 +33,9 @@ for (c=0;c<=100;++c) {
 .controller('sidebarCtrl', function() {
 	var main = this;
 	var check = 'mario';	
-	main.challenges = {
-		"00":['Name Generator', check],
-		"01":['Higher Lower', ''],
-		"99":['Enigma Machine Simulator', '']
-		};
+	main.challenges = [
+		{"no":"00", "info":['Name Generator', check]},
+		{"no":"01", "info":['Higher Lower', '']},
+		{"no":"99", "info":['Enigma Machine Simulator', '']}
+		];
 })
