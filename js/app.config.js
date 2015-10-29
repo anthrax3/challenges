@@ -4,6 +4,10 @@ angular.module('challengesApp').config(function($locationProvider, $urlRouterPro
 
 	$urlRouterProvider.otherwise('/');
 
+controller: function($scope) {
+$scope.challenges = ['Name Generator', 'Higher Lower', 'Enigma Machine Simulator'];
+}
+
 	$stateProvider
 
 	.state('main', {
@@ -27,7 +31,5 @@ for (c=0;c<=100;++c) {
 			templateUrl: 'challenges/views/challenges/' + c + '.html'
 		})
 };
-
-$scope.challenges = ['Name Generator', 'Higher/Lower', 'Enigma Machine Simulator'];
 
 })
