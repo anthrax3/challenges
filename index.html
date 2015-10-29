@@ -27,13 +27,13 @@
         <li data-toggle="collapse" data-target="#challenges" class="collapsed">
           <a ui-sref="challenges"><i class="fa fa-keyboard-o fa-lg"></i> Challenges <span class="arrow"></span></a>
         </li>  
-          <ul class="sub-menu collapse" id="challenges">
+          <ul  ng-controller="sidebarCtrl as main" class="sub-menu collapse" id="challenges">
 
             <li><a ui-sref="challenges-00">00 - Name Generator <i class="fa fa-check fa-lg"></i></a></li>
             <li><a ui-sref="challenges-01">01 - Higher/Lower </a></li>
             <li><a ui-sref="challenges-99">99 - Enigma Machine Simulator </a></li>
 
-            <li ng-controller="sidebarCtrl as main" ng-repeat="challenge in main.challenges">test {{challenge}}</li>
+            <li ng-repeat="challenge in main.challenges">test {{challenge}}</li>
 
           </ul>
 
