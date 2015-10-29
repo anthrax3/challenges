@@ -4,10 +4,6 @@ angular.module('challengesApp').config(function($locationProvider, $urlRouterPro
 
 	$urlRouterProvider.otherwise('/');
 
-controller: function($scope) {
-$scope.challenges = ['Name Generator', 'Higher Lower', 'Enigma Machine Simulator'];
-}
-
 	$stateProvider
 
 	.state('main', {
@@ -32,4 +28,9 @@ for (c=0;c<=100;++c) {
 		})
 };
 
+})
+
+.controller('sidebarCtrl', function() {
+	var main = this;	
+	main.challenges = ['Name Generator', 'Higher Lower', 'Enigma Machine Simulator'];
 })
