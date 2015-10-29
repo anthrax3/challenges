@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/main.css"/>
   <base href="/" />
 </head>
-<body ng-app="challengesApp">
+<body ng-app="challengesApp" ng-controller="sidebarCtrl as main">
 
 <div class="nav-side-menu">
   <div class="profile-info text-centered">
@@ -27,7 +27,7 @@
         <li data-toggle="collapse" data-target="#challenges" class="collapsed">
           <a ui-sref="challenges"><i class="fa fa-keyboard-o fa-lg"></i> Challenges <span class="arrow"></span></a>
         </li>  
-          <ul  ng-controller="sidebarCtrl as main" class="sub-menu collapse" id="challenges">
+          <ul class="sub-menu collapse" id="challenges">
 
             <li><a ui-sref="challenges-00">00 - Name Generator <i class="fa fa-check fa-lg"></i></a></li>
             <li><a ui-sref="challenges-01">01 - Higher/Lower </a></li>
