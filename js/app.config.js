@@ -15,7 +15,7 @@ angular.module('challengesApp').config(function($locationProvider, $urlRouterPro
 	.state('challenges', {
 		url: '/challenges/',
 		templateUrl: '/challenges/views/challenges.html'
-	})
+	});
 
 for (c=0;c<=100;++c) {
   c<10?c='0'+c:'';
