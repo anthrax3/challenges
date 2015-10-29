@@ -34,7 +34,7 @@ for (c=0;c<=100;++c) {
 	var main = this;
 	var check = 'mario';	
 	main.challenges = [
-		{00:['Name Generator', check]},
+		{"00":['Name Generator', check]},
 		{01:['Higher Lower', '']},
 		{99:['Enigma Machine Simulator', '']}
 		];
