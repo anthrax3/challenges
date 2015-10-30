@@ -1,10 +1,12 @@
 <div class="view-main">
 	<h1>test view-main</h1>
-	<li><a ui-sref="challenges-00">00 - Name Generator <i class="fa fa-check fa-lg"></i></a></li>
-	<li><a ui-sref="challenges-01">01 - Higher/Lower </a></li>
-	<li><a ui-sref="challenges-99">99 - Enigma Machine Simulator </a></li>
+	<ul>
+		<li><a ui-sref="challenges-00">00 - Name Generator <i class="fa fa-check fa-lg"></i></a></li>
+		<li><a ui-sref="challenges-01">01 - Higher/Lower </a></li>
+		<li><a ui-sref="challenges-99">99 - Enigma Machine Simulator </a></li>
 
-	<li ng-repeat="challenge in main.challenges">
-	  <a ui-sref="challenges-{challenge.num}">{{challenge.num}} - {{challenge.info[0]}}<i class="{{challenge.info[1]}}"></i> </a>
-	</li>
+		<li ng-repeat="challenge in main.challenges">
+		  <a ui-sref="challenges-{challenge.num}">{{challenge.num}} - {{challenge.info[0]}}<i class="{{challenge.info[1]}}"></i> </a>
+		</li>
+	</ul>
 </div>
