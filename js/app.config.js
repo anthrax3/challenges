@@ -5,12 +5,12 @@ angular.module('challengesApp').config(function($locationProvider, $urlRouterPro
 	$stateProvider
 
 	.state('main', {
-		url: '/test',
+		url: '/challenges/',
 		templateUrl: '/challenges/views/main.html'
 	})
 
 	.state('challenges', {
-		url: '/challenges/',
+		url: '/challenges/challenges',
 		templateUrl: '/challenges/views/challenges.html'
 	});
 
