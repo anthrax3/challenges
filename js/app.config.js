@@ -18,7 +18,7 @@ for (c=0;c<=100;++c) {
   c<10?c='0'+c:'';
   $stateProvider
   	.state('challenges-' + c, {
-			url: '/' + c,
+			url: '/challenges/challenges-' + c,
 			templateUrl: 'challenges/views/challenges/' + c + '.html'
 		})
 };
