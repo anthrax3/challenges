@@ -32,7 +32,7 @@ for (c=0;c<=100;++c) {
 
 .controller('sidebarCtrl', function() {
 	var main = this;
-	var check = '<i class="fa fa-check fa-lg"></i>';	
+	var check = 'fa fa-check fa-lg';	
 	main.challenges = [
 		{"num":"00", "info":['Name Generator', check]},
 		{"num":"01", "info":['Higher Lower', '']},
