@@ -1,17 +1,12 @@
 angular.module('challengesApp').config(function($locationProvider, $urlRouterProvider, $stateProvider){
 
 	$locationProvider.html5Mode({enabled: true, requireBase: false});
-
 	$urlRouterProvider.otherwise('/');
-
 	$stateProvider
 
 	.state('main', {
-		url: '/',
-		templateUrl: '/challenges/views/main.html',
-		controller: function($scope) {
-			$scope.myarr = ['1','2','3','4','5'];
-		}
+		url: '/test',
+		templateUrl: '/challenges/views/main.html'
 	})
 
 	.state('challenges', {
