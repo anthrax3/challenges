@@ -7,7 +7,7 @@ angular.module('challengesApp').config(function($locationProvider, $urlRouterPro
 	$stateProvider
 
 	.state('main', {
-		url: '/challenges/',
+		url: '/',
 		templateUrl: '/challenges/views/main.html',
 		controller: function($scope) {
 			$scope.myarr = ['1','2','3','4','5'];
