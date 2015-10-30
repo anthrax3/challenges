@@ -1,6 +1,6 @@
 angular.module('challengesApp').config(function($locationProvider, $urlRouterProvider, $stateProvider){
 
-	$locationProvider.html5Mode(true);
+	//$locationProvider.html5Mode(true);
 
 	$urlRouterProvider.otherwise('/');
 
