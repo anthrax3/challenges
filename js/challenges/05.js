@@ -1,8 +1,7 @@
 $(function() {
-	var fizzbuzz = function() {
-	for(i=0;i<100;)return((++i%3?'':'Fizz')+(i%5?'':'Buzz')||i);
-	}
 	$( "#fizzbuzz" ).click(function() {
-  	$( ".fizzbuzz" ).text(fizzbuzz());
+    for(i=1;i<=100;++i) {
+      $( ".fizzbuzz" ).append(((i%3?'':'Fizz')+(i%5?'':'Buzz')||i)+"<br />");
+    }
 	});
 });
