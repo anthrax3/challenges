@@ -355,6 +355,7 @@ a:hover {
  margin: 1em; 
 }
 .halfsize {
+  display: inline-block;
   width: 40%;
   margin: 5%; 
 }
