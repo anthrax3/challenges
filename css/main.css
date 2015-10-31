@@ -349,3 +349,8 @@ a:hover {
 .main-text {
   margin-top: 10%;
 }
+.left-btn, .right-btn {
+ display: inline-block;
+ padding: 1em;
+ margin: 1em; 
+}
