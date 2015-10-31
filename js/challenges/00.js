@@ -8,14 +8,12 @@ $(function() {
 	"Daisy", "Emily", "Felicity"
 	];
 	var randomName = function(arr) {
-		return arr[0];
+		return (arr[(Math.floor(Math.random() * arr.length))]);
 	}
 	$( "#name-male" ).click(function() {
-		console.log('#name-male clicked');
   	$(".name-male").text(randomName(namesMale));
 	});
 	$( "#name-female" ).click(function() {
-		console.log('#name-female clicked');
-  	$(".name-female").text("Mary");
+  	$(".name-female").text(randomName(namesFemale));
 	});
 });
