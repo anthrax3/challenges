@@ -1,11 +1,11 @@
 $(function() {
 	var namesMale = [
-	Adam, Barry, Colin,
-	Dean, Ethan, Fred
+	"Adam", "Barry", "Colin",
+	"Dean", "Ethan", "Fred"
 	];
 	var namesFemale = [
-	Anna, Beth, Carol,
-	Daisy, Emily, Felicity
+	"Anna", "Beth", "Carol",
+	"Daisy", "Emily", "Felicity"
 	];
 	var randomName = function(arr) {
 		return arr[0];
