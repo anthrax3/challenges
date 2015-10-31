@@ -354,3 +354,7 @@ a:hover {
  padding: 1em;
  margin: 1em; 
 }
+.input-group-lg {
+  width: 50%;
+  margin: 1em; 
+}
