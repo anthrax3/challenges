@@ -3,7 +3,7 @@ $(function() {
 		var computerChoice = Math.random();
 		if (computerChoice <= 0.33) {
 		   computerChoice = 'rock';
-		} else if (computerChoice > 0.33 && 0.66) {
+		} else if (computerChoice > 0.33 && computerChoice < 0.66) {
 		    computerChoice = 'paper';
 		} else {
 		    computerChoice = 'scissors';
