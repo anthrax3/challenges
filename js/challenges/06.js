@@ -1,5 +1,5 @@
 $(function() {
 	$( ".fa" ).click(function() {
-	console.log(this);
+	$( "#result" ).text("You chose " + $( this ).parent().text().toLowerCase());
 	});
 });
