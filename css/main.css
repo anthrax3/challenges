@@ -357,7 +357,7 @@ a:hover {
 .halfsize {
   width: 40%; 
 }
-.fa-hand-rock-o:hover, .fa-hand-paper-o:hover, .fa-hand-scissors-o:hover {
+.fa-hand-rock-o, .fa-hand-paper-o:hover, .fa-hand-scissors-o:hover {
   border-color: #d19b3d;
   border-style:dashed;
   border-width:5px; 
