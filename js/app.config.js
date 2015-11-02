@@ -31,10 +31,10 @@ for (c=0;c<=100;++c) {
 	main.challenges = [
 		{"num":"00", "info":['Name Generator', check]},
 		{"num":"01", "info":['Higher/Lower', '']},
-		{"num":"02", "info":['Temperature Converter', '']},
+		{"num":"02", "info":['Temperature Converter', check]},
 		{"num":"03", "info":['Calculate Age in Seconds', '']},
 		{"num":"04", "info":['Encrypt/Decrypt Algorithm', '']},
-		{"num":"05", "info":['FizzBuzz', '']},
+		{"num":"05", "info":['FizzBuzz', check]},
 		{"num":"06", "info":['Rock Paper Scissors', '']},
 		{"num":"07", "info":['Hangman', '']},
 		{"num":"08", "info":['Love Calculator', '']},
