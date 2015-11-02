@@ -9,7 +9,7 @@ $(function() {
 	    	$( ".guessNumber" ).text("You won! The number was " + number + newGame);
 	    	number = Math.floor(Math.random() * 10) + 1;
 	    	tries = 3;
-	    } else if(!(guess > 0 || guess <= 10)) {
+	    } else if(!(guess > 0 && guess <= 10)) {
 	    		tries++;
 	    		$( ".guessNumber" ).text("Guess must be a number between 1 and 10. " + tries + att);
 	    } else {
