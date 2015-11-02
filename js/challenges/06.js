@@ -32,6 +32,6 @@ $(function() {
 	      }
 	    }
 	  };
-		$( "#result" ).text("You chose " + userChoice + ". Computer chose " + computerChoice + "<br />" + compare(userChoice,computerChoice));
+		$( "#result" ).html("You chose " + userChoice + ". Computer chose " + computerChoice + "<br />" + compare(userChoice,computerChoice));
 	});
 });
