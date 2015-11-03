@@ -356,7 +356,7 @@ a:hover {
 }
 .center-form {
   display: block;
-  margin: 50%;
+  margin-left: 50%;
   text-align: center;
 }
 .halfsize {
