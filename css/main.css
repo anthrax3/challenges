@@ -354,6 +354,10 @@ a:hover {
  padding: 1em;
  margin: 1em; 
 }
+.center-form {
+  display: inline-block;
+  text-align: center;
+}
 .halfsize {
   width: 40%; 
 }
