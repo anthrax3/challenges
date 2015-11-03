@@ -362,6 +362,7 @@ a:hover {
 }
 .halfsize {
   display: inline-block;
+  margin: 0 auto;
   width: 40%; 
 }
 .fa-hand-rock-o:hover, .fa-hand-paper-o:hover, .fa-hand-scissors-o:hover {
