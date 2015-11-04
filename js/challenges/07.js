@@ -23,6 +23,10 @@ function newGame() {
 	wordToGuess = getWord();
 	wordLength = wordToGuess.length;
 
+	function getLetter() {
+    alert('You selected ' + this.innerHTML);
+}
+
 	// create row of underscores the same length as letters to guess
 	for (var i = 0; i < wordLength; i++) {
 		placeholders += '_';
