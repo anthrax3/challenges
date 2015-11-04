@@ -23,8 +23,17 @@ function newGame() {
 	wordToGuess = getWord();
 	wordLength = wordToGuess.length;
 
-	function getLetter() {
-    alert('You selected ' + this.innerHTML);
+// Get selected letter and remove it from the alphabet pad
+function getLetter() {
+    checkLetter(this.innerHTML);
+    this.innerHTML = '&nbsp;';
+    this.style.cursor = 'default';
+    this.onclick = null;
+}
+
+// Check whether selected letter is in the word to be guessed
+function checkLetter(letter) {
+	
 }
 
 	// create row of underscores the same length as letters to guess
