@@ -10,11 +10,11 @@ var canvas = document.getElementById('stage'),
 function init() {
 	var w = screen.availWidth <= 800 ? screen.availWidth : 800;
 	$('#loading').hide();
-	$('#newGame').css('display', 'inline-block').click(newGame);
+	$('#newGame').css('display', 'block').click(newGame);
 }
 
 function newGame() {
     alert('Game started');
 }
 
-init();
+//init();
