@@ -370,3 +370,6 @@ a:hover {
   border-style:dashed;
   border-width:5px; 
 }
+#newGame {
+  display: none;
+}
