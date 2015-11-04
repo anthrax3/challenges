@@ -17,4 +17,4 @@ function newGame() {
     alert('Game started');
 }
 
-//init();
+init();
