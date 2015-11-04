@@ -9,9 +9,12 @@ var canvas = document.getElementById('stage'),
 
 function init() {
 	var w = screen.availWidth <= 800 ? screen.availWidth : 800;
-
-	// Hide the loading message and display the control buttons
 	$('#loading').hide();
-	$('#play').css('display', 'inline-block').click(newGame);
-	$('#clear').css('display', 'inline-block').click(resetScore);
+	$('#newGame').css('display', 'inline-block').click(newGame);
 }
+
+function newGame() {
+    alert('Game started');
+}
+
+//init();
