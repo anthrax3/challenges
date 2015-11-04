@@ -18,12 +18,8 @@ function newGame() {
       frag = document.createDocumentFragment(),
       abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M',
             'N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-  console.log("luigi");
+	$( "#result" ).html(abc);
 }
 
-$( "#newGame" ).click(function() {
-	console.log("mario");
-	//$( "#result" ).html(abc);
-});
 
 init();
