@@ -22,6 +22,13 @@ function newGame() {
 	correctGuesses = 0;
 	wordToGuess = getWord();
 	wordLength = wordToGuess.length;
+
+	// create row of underscores the same length as letters to guess
+	for (var i = 0; i < wordLength; i++) {
+		placeholders += '_';
+	}
+	word.innerHTML = placeholders;
+
 	$( "#result" ).html(abc + wordToGuess + wordLength);
 }
 
