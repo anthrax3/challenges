@@ -68,15 +68,17 @@ function checkLetter(letter) {
 	word.innerHTML = placeholders;
 
 	// create an alphabet pad to select letters
-letters.innerHTML = '';
-for (i = 0; i < 26; i++) {
-    var div = document.createElement('div');
-    div.style.cursor = 'pointer';
-    div.innerHTML = abc[i];
-    div.onclick = getLetter;
-    frag.appendChild(div);
-}
-letters.appendChild(frag);
+	letters.innerHTML = '';
+	for (i = 0; i < 26; i++) {
+	    var div = document.createElement('div');
+	    div.style.cursor = 'pointer';
+	    div.innerHTML = abc[i];
+	    div.onclick = getLetter;
+	    frag.appendChild(div);
+	}
+	letters.appendChild(frag);
+
+	drawCanvas();
 
 	$( "#result" ).html(abc + wordToGuess + wordLength);
 } // close newGame
