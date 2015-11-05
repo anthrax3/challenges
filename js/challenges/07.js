@@ -108,6 +108,7 @@ function drawCanvas() {
         if (badGuesses > 1) {
             // create the arm of the gallows
             c.lineTo(150,10);
+            drawLine(c, [30,50], [70,10]);
             c.stroke();
         }
         if (badGuesses > 2) {
