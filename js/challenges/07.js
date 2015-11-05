@@ -167,4 +167,16 @@ function drawLine(context, from, to) {
     context.stroke();
 }
 
+// When the game is over, display missing letters in red
+function showResult() {
+    var placeholders = word.innerHTML;
+    placeholders = placeholders.split('');
+    for (i = 0; i < wordLength; i++) {
+        if (placeholders[i] == '_') {
+        placeholders[i] = '<span style="color:red">' + wordToGuess.charAt(i).toUpperCase() + '</span>';
+        }
+    }
+    word.innerHTML = placeholders.join('');
+}
+
 init();
