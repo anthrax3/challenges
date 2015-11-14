@@ -4,11 +4,11 @@ $(function() {
 	function recursion(n) {
 		var recTimeA = performance.now();
 	  if(n <= 2) {
-			$( "#resultRec" ).append('mario' + '<br />');
+			$( "#resultRec" ).append('peach' + '<br />');
 	    return 1;
 	  } else {
-	  	return recursion(n - 1) + recursion(n - 2);
 			$( "#resultRec" ).append('luigi' + '<br />');
+	  	return recursion(n - 1) + recursion(n - 2);
 	  }
 		var recTimeB = performance.now();
 	  $( "#resultRec" ).append( "It took " + (recTimeB - recTimeA) + " ms." );
