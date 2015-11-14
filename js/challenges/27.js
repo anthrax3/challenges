@@ -1,12 +1,13 @@
 $(function() {
 
+
 	function recursion(n) {
 		var recTimeA = performance.now();
 	  if(n <= 2) {
 			$( "#resultRec" ).append('mario' + '<br />');
 	    return 1;
 	  } else {
-	  	return this.recursion(n - 1) + this.recursion(n - 2);
+	  	return recursion(n - 1) + recursion(n - 2);
 			$( "#resultRec" ).append('luigi' + '<br />');
 	  }
 		var recTimeB = performance.now();
