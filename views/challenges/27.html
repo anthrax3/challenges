@@ -1,5 +1,6 @@
 $(function() {
 
+/*
 	function recursion(n) {
 		var recTimeA = performance.now();
 	  if(n <= 2) {
@@ -12,7 +13,7 @@ $(function() {
 		var recTimeB = performance.now();
 	  $( "#resultRec" ).append( "It took " + (recTimeB - recTimeA) + " ms." );
 	}
-
+*/
 	function iteration(n) {
 		var itTimeA = performance.now();
 	  var a = 0, b = 1, f = 1;
@@ -27,7 +28,7 @@ $(function() {
 	}
 
 	$( "#genFib" ).click(function() {
-		recursion($( "#input" ).val());
+		//recursion($( "#input" ).val());
 		iteration($( "#input" ).val());
 	});
 });
