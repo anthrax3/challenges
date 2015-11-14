@@ -2,7 +2,6 @@ $(function() {
 
 	function recursion(n) {
 	var recTimeA = performance.now();
-    $( "#resultIt" ).html( "Iteration is best" );
     if(n <= 2) {
 				//$( "#resultRec" ).append(1 + '<br />');
         return 1;
@@ -11,7 +10,7 @@ $( "#resultRec" ).append(recursion(n - 1) + recursion(n - 2) + '<br />');
     }
 
     var recTimeB = performance.now();
-    $( "#resultIt" ).append( "It took " + (recTimeB - recTimeA) + " ms." );
+    $( "#resultRec" ).append( "It took " + (recTimeB - recTimeA) + " ms." );
 	}
 
 	function iteration(n) {
@@ -21,9 +20,9 @@ $( "#resultRec" ).append(recursion(n - 1) + recursion(n - 2) + '<br />');
 	      f = a + b;
 	      a = b;
 	      b = f;
-				$( "#resultRec" ).append(f + '<br />');
+				$( "#resultIt" ).append(f + '<br />');
 	  }
-        $( "#resultRec" ).append('mario');
+        $( "#resultIt" ).append('mario');
      var itTimeB = performance.now();
     $( "#resultIt" ).append( "It took " + (itTimeB - itTimeA) + " ms." );
 
