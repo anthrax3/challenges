@@ -1,21 +1,33 @@
-<div class="container">
-	<div class="row">
-	  <div class="col-md-12">
-	  	<h1 class="text-centered">Fibonnaci Sequence</h1>
-	  	<p class="about-text">
-	Challenge Summary. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eaque, animi mollitia pariatur voluptatem praesentium at impedit rem, voluptates illo reprehenderit amet eum ea! Cupiditate, voluptatem! Voluptas neque, illum beatae!
-			</p>
-	  	<div class="text-centered">
-		  	<input type="text" id="input" placeholder="10"><br />
-	  		<div id="genFib" class="btn btn-primary btn-lg">Generate Fibonnaci Sequence</div>
-	  	</div>
-	  </div>
-  	<div class="col-md-6">
-	  	<h3 id="resultRec" class="text-centered"></h3>
-		</div>
-  	<div class="col-md-6">
-	  	<h3 id="resultIt" class="text-centered"></h3>
-  	</div>
-	</div>
-</div>
-<script src="challenges/js/challenges/27.js"></script>
+$(function() {
+
+	function recursion(n) {
+		var recTimeA = performance.now();
+	  if(n <= 2) {
+			$( "#resultRec" ).append('mario' + '<br />');
+	    return 1;
+	  } else {
+	  	return recursion(n - 1) + recursion(n - 2);
+			$( "#resultRec" ).append('luigi' + '<br />');
+	  }
+		var recTimeB = performance.now();
+	  $( "#resultRec" ).append( "It took " + (recTimeB - recTimeA) + " ms." );
+	}
+
+	function iteration(n) {
+		var itTimeA = performance.now();
+	  var a = 0, b = 1, f = 1;
+	  for(var i = 2; i <= n; i++) {
+	    f = a + b;
+	    a = b;
+	    b = f;
+			$( "#resultIt" ).append(f + '<br />');
+	  }
+    var itTimeB = performance.now();
+    $( "#resultIt" ).append( "It took " + (itTimeB - itTimeA) + " ms." );
+	}
+
+	$( "#genFib" ).click(function() {
+		recursion($( "#input" ).val());
+		iteration($( "#input" ).val());
+	});
+});
